@@ -1,0 +1,1047 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (Project Team)
+/CreationDate (D\07220261025160932\05300\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220261025160932\05300\04700\047)
+/Subject (\050unspecified\051)
+/Title (Grain Definition Document \055 NYC Ride\055Hailing\054 Weather \046 EV Charging Access)
+/Trapped (\057False)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 10168
+>>
+stream
+q
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+BT
+/F1 8 Tf
+9.6 TL
+ET
+0.333333 0.333333 0.333333 rg
+BT
+1 0 0 1 51.02362 25.51181 Tm
+(DL3004 \174 Final Project \174 Phase 1 \174 Grain Definition Document) Tj
+T*
+ET
+BT
+1 0 0 1 518.9 25.51181 Tm
+(Page 1) Tj
+T*
+ET
+Q
+q
+1 0 0 1 57.02362 770.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 4 Tm
+/F2 19 Tf
+23 TL
+(Grain Definition Document) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 768.3701 cm
+Q
+q
+1 0 0 1 57.02362 753.3701 cm
+q
+BT
+1 0 0 1 0 3 Tm
+15 TL
+/F1 12 Tf
+0.333333 0.333333 0.333333 rg
+(NYC Ride\055Hailing\054 Weather \046 EV Charging Access) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 747.3701 cm
+Q
+q
+1 0 0 1 51.02362 712.3701 cm
+q
+0.933333 0.952941 0.976471 rg
+n
+0 35 56.69291 -35 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 6 20.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Course) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 62.69291 20.5 cm
+q
+BT
+1 0 0 1 0 2.7 Tm
+11.5 TL
+/F1 8.8 Tf
+0.133333 0.133333 0.133333 rg
+(DL3004 Data Warehousing \046 BI Lab\054 Fall 2026\054 FAST\055NU Lahore) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Team) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 62.69291 3 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+() Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 35 m
+493.2283 35 l
+S
+n
+0 0 m
+493.2283 0 l
+S
+n
+0 0 m
+0 35 l
+S
+n
+493.2283 0 m
+493.2283 35 l
+S
+n
+0 17.5 m
+493.2283 17.5 l
+S
+n
+56.69291 0 m
+56.69291 35 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 706.3701 cm
+Q
+q
+1 0 0 1 57.02362 693.3701 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F1 9.5 Tf
+13 TL
+(The grain says what one row of a fact table means\056 We fix the grain first\054 so every measure and dimension fits it\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 669.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(1\056 Grain Statements) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 51.02362 495.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 170 493.2283 -19.5 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 96.5 493.2283 -54 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 5 154.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Fact Table) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 146.7323 154.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Grain Statement) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 294.1339 154.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Row Is Unique By) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 384.8425 154.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Why This Level) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 117.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 146.7323 100.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 37.2 Tm
+/F2 8.8 Tf
+11.5 TL
+(One row represents one) Tj
+T*
+(completed ride\055hailing trip\054 from) Tj
+T*
+(pickup to drop\055off\054 in the) Tj
+T*
+(sampled TLC data\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 294.1339 112 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(trip\137id \050generated) Tj
+T*
+(row number\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 384.8425 106.25 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 25.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(It is the lowest level in the) Tj
+T*
+(data\056 Any summary can) Tj
+T*
+(be built from it\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 63.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 146.7323 52.25 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 25.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(One row represents one pickup) Tj
+T*
+(zone in one hour\054 including) Tj
+T*
+(hours with zero trips\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 294.1339 58 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(zone\137key \053) Tj
+T*
+-0.121269 Tw
+(date\137key \053 time\137key) Tj
+T*
+0 Tw
+ET
+Q
+Q
+q
+1 0 0 1 384.8425 46.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 37.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(Weather is measured) Tj
+T*
+(hourly\054 so an hourly zone) Tj
+T*
+(summary makes rain) Tj
+T*
+(comparisons simple\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 15.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Fact\137Charger\137Coverage) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 146.7323 4 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 25.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(One row represents one) Tj
+T*
+(charging station opened in one) Tj
+T*
+(zone on one date\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 294.1339 4 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 25.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(station\137id \050each) Tj
+T*
+(station appears) Tj
+T*
+(once\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 384.8425 4 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 25.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(It records that coverage) Tj
+T*
+(exists\054 with no number to) Tj
+T*
+(store\056) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 170 m
+493.2283 170 l
+S
+n
+0 0 m
+493.2283 0 l
+S
+n
+0 0 m
+0 170 l
+S
+n
+493.2283 0 m
+493.2283 170 l
+S
+n
+0 150.5 m
+493.2283 150.5 l
+S
+n
+0 96.5 m
+493.2283 96.5 l
+S
+n
+0 42.5 m
+493.2283 42.5 l
+S
+n
+141.7323 0 m
+141.7323 170 l
+S
+n
+289.1339 0 m
+289.1339 170 l
+S
+n
+379.8425 0 m
+379.8425 170 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 471.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(2\056 Testing the Grain Against Business Questions) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 51.02362 292.8701 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 174.5 493.2283 -19.5 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 124 493.2283 -31 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 62 493.2283 -31 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 5 159 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Question) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 203.4252 159 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Fact Table) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 330.9843 159 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F2 8.8 Tf
+11.5 TL
+(Can the Grain Answer It\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 128 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(Which zones have the most trips each month\077) Tj
+T*
+(\050Q1\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 203.4252 133.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 330.9843 128 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(Yes\056 Count trip rows by zone and) Tj
+T*
+(month\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 102.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(What is the average wait by hour\077 \050Q4\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 203.4252 102.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 330.9843 97 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(Yes\056 Use total wait \057 trip count\054 not an) Tj
+T*
+(average of averages\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 66 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(How much does rain change trips per hour\077) Tj
+T*
+(\050Q5\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 203.4252 71.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 330.9843 66 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(Yes\056 One row per zone\055hour already) Tj
+T*
+(holds trips and rainfall\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 40.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Which zones have no charging station\077 \050Q9\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 203.4252 40.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Fact\137Charger\137Coverage) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 330.9843 35 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+(Yes\056 Find zones in Dim\137Zone with no) Tj
+T*
+(matching row\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 9.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Which individual trip took 90 minutes\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 203.4252 9.75 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.7 Tm
+/F1 8.8 Tf
+11.5 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 330.9843 4 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 14.2 Tm
+/F1 8.8 Tf
+11.5 TL
+-0.040118 Tw
+(No\056 The snapshot has no trip\055level rows\056) Tj
+T*
+0 Tw
+(Use Fact\137Trips\056) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 174.5 m
+493.2283 174.5 l
+S
+n
+0 0 m
+493.2283 0 l
+S
+n
+0 0 m
+0 174.5 l
+S
+n
+493.2283 0 m
+493.2283 174.5 l
+S
+n
+0 155 m
+493.2283 155 l
+S
+n
+0 124 m
+493.2283 124 l
+S
+n
+0 93 m
+493.2283 93 l
+S
+n
+0 62 m
+493.2283 62 l
+S
+n
+0 31 m
+493.2283 31 l
+S
+n
+198.4252 0 m
+198.4252 174.5 l
+S
+n
+325.9843 0 m
+325.9843 174.5 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 268.8701 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(3\056 Grain Rules We Follow) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 251.8701 cm
+q
+BT
+1 0 0 1 2 3.5 Tm
+/F1 10 Tf
+12 TL
+0.133333 0.133333 0.133333 rg
+<7f> Tj
+ET
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 12 3.5 Tm
+/F1 9.5 Tf
+13 TL
+(Every fact table has exactly one grain statement\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 236.8701 cm
+q
+BT
+1 0 0 1 2 3.5 Tm
+/F1 10 Tf
+12 TL
+0.133333 0.133333 0.133333 rg
+<7f> Tj
+ET
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 12 3.5 Tm
+/F1 9.5 Tf
+13 TL
+(We never mix grains in one table\056 Trip rows and zone\055hour rows stay in separate fact tables\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 221.8701 cm
+q
+BT
+1 0 0 1 2 3.5 Tm
+/F1 10 Tf
+12 TL
+0.133333 0.133333 0.133333 rg
+<7f> Tj
+ET
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 12 3.5 Tm
+/F1 9.5 Tf
+13 TL
+(Every dimension and measure must make sense at its table\047s grain\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 206.8701 cm
+q
+BT
+1 0 0 1 2 3.5 Tm
+/F1 10 Tf
+12 TL
+0.133333 0.133333 0.133333 rg
+<7f> Tj
+ET
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 12 3.5 Tm
+/F1 9.5 Tf
+13 TL
+(Totals are stored\054 and averages are calculated from totals\056) Tj
+T*
+ET
+Q
+Q
+
+Q
+q
+0.0 0.0 595.276 841.89 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+112.7165 715.2485 328.2392 10.8 re
+f*
+0.133 0.133 0.133 rg
+BT
+/F1-0 7.353272 Tf
+8.823926 TL
+ET
+BT
+1 0 0 1 113.7165 718.0085 Tm
+(Ayza Ahmed \055 24L\0552577\054 Eman Adil \055 24L\0552589\054 Dua Sarfaraz \055 24L\0552587\054 Gul\055e\055Zara \055 24L\0552592\054 Rumesha Naveed \055 24L\0552603) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000408 00000 n 
+0000000467 00000 n 
+0000000516 00000 n 
+0000000759 00000 n 
+0000010980 00000 n 
+0000011087 00000 n 
+0000011194 00000 n 
+trailer
+<<
+/Size 9
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+11306
+%%EOF

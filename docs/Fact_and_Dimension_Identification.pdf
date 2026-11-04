@@ -1,0 +1,1718 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (Project Team)
+/CreationDate (D\07220261025160731\05300\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220261025160731\05300\04700\047)
+/Subject (\050unspecified\051)
+/Title (Fact \046 Dimension Identification \055 NYC Ride\055Hailing\054 Weather \046 EV Charging Access)
+/Trapped (\057False)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 15458
+>>
+stream
+q
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+BT
+/F1 8 Tf
+9.6 TL
+ET
+0.333333 0.333333 0.333333 rg
+BT
+1 0 0 1 51.02362 25.51181 Tm
+(DL3004 \174 Final Project \174 Phase 1 \174 Fact \046 Dimension Identification) Tj
+T*
+ET
+BT
+1 0 0 1 518.9 25.51181 Tm
+(Page 1) Tj
+T*
+ET
+Q
+q
+1 0 0 1 57.02362 770.3701 cm
+q
+BT
+1 0 0 1 0 4 Tm
+23 TL
+/F2 19 Tf
+0.121569 0.227451 0.372549 rg
+(Fact \046 Dimension Identification) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 768.3701 cm
+Q
+q
+1 0 0 1 57.02362 753.3701 cm
+q
+BT
+1 0 0 1 0 3 Tm
+15 TL
+/F1 12 Tf
+0.333333 0.333333 0.333333 rg
+(NYC Ride\055Hailing\054 Weather \046 EV Charging Access) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 747.3701 cm
+Q
+q
+1 0 0 1 51.02362 713.3701 cm
+q
+0.933333 0.952941 0.976471 rg
+n
+0 34 56.69291 -34 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 6 20 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Course) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 62.69291 20 cm
+q
+BT
+1 0 0 1 0 2.5 Tm
+11 TL
+/F1 8.5 Tf
+0.133333 0.133333 0.133333 rg
+(DL3004 Data Warehousing \046 BI Lab\054 Fall 2026\054 FAST\055NU Lahore) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Team) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 62.69291 3 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+() Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 34 m
+493.2283 34 l
+S
+n
+0 0 m
+493.2283 0 l
+S
+n
+0 0 m
+0 34 l
+S
+n
+493.2283 0 m
+493.2283 34 l
+S
+n
+0 17 m
+493.2283 17 l
+S
+n
+56.69291 0 m
+56.69291 34 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 690.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(1\056 Fact Tables) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 51.02362 559.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 127 493.2283 -29 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 69 493.2283 -40 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 4 107 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Fact Table) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 107 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Type) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 199.5906 107 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Measures \050additivity\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434.8661 101.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 13.5 Tm
+/F2 8.5 Tf
+11 TL
+(Degenerate) Tj
+T*
+(Dim\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 72.5 cm
+q
+BT
+1 0 0 1 0 13.5 Tm
+11 TL
+/F2 8.5 Tf
+0.133333 0.133333 0.133333 rg
+(Fact\137Trips) Tj
+/F1 8.5 Tf
+T*
+(Ride\055hailing trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 78 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Transaction) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 199.5906 72.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 13.5 Tm
+/F1 8.5 Tf
+11 TL
+(trip\137miles\054 trip\137time\137sec\054 base\137fare\054 tips\054 driver\137pay\054) Tj
+T*
+(wait\137min \050all additive\051\056 Average wait \075 total wait \057 trips\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434.8661 78 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(trip\137id) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 38 cm
+q
+BT
+1 0 0 1 0 13.5 Tm
+11 TL
+/F2 8.5 Tf
+0.133333 0.133333 0.133333 rg
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+/F1 8.5 Tf
+T*
+(Zone demand and weather) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 38 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 13.5 Tm
+/F1 8.5 Tf
+11 TL
+(Periodic) Tj
+T*
+(snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 199.5906 32.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 24.5 Tm
+/F1 8.5 Tf
+11 TL
+(trip\137count\054 total\137wait\137min\054 total\137driver\137pay \050additive\051\056) Tj
+T*
+(rainfall\137mm \050semi\055additive\072 add across hours\054 not across) Tj
+T*
+(zones\054 because one city reading repeats in every zone\051\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434.8661 43.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 3.5 cm
+q
+BT
+1 0 0 1 0 13.5 Tm
+11 TL
+/F2 8.5 Tf
+0.133333 0.133333 0.133333 rg
+(Fact\137Charger\137Coverage) Tj
+/F1 8.5 Tf
+T*
+(Charging station openings) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 9 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Factless) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 199.5906 9 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(No measures\056 Count rows to count stations\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434.8661 9 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 127 m
+493.2283 127 l
+S
+n
+0 0 m
+493.2283 0 l
+S
+n
+0 0 m
+0 127 l
+S
+n
+493.2283 0 m
+493.2283 127 l
+S
+n
+0 98 m
+493.2283 98 l
+S
+n
+0 69 m
+493.2283 69 l
+S
+n
+0 29 m
+493.2283 29 l
+S
+n
+133.2283 0 m
+133.2283 127 l
+S
+n
+195.5906 0 m
+195.5906 127 l
+S
+n
+430.8661 0 m
+430.8661 127 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 536.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(2\056 Dimension Tables) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 51.02362 384.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 148 493.2283 -18 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 112 493.2283 -18 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 65 493.2283 -29 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 18 493.2283 -18 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 4 133.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Dimension) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 77.70079 133.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Natural Key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 159.9055 133.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Surrogate Key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 227.937 133.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Key Attributes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 372.5039 133.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(SCD) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 412.189 133.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Hierarchy) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 115.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Dim\137Zone) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 77.70079 115.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(LocationID) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 159.9055 115.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(zone\137key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 227.937 115.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(zone\054 borough\054 service\137zone) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 372.5039 115.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Type 1) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 412.189 115.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Borough to Zone) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 97.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Dim\137Station) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 77.70079 97.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(station\137id) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 159.9055 97.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(station\137key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 227.937 97.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(network\054 ports\054 charger level\054 status) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 372.5039 97.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Type 2) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 412.189 97.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 74 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Dim\137Company) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 77.70079 74 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(hvfhs\137license\137num) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 159.9055 74 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(company\137key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 227.937 68.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 13.5 Tm
+/F1 8.5 Tf
+11 TL
+(company name \050Uber\054 Lyft\054 Via\054) Tj
+T*
+(Juno\051\054 base number) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 372.5039 74 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Type 1) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 412.189 74 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Dim\137Date) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 77.70079 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(date) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 159.9055 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(date\137key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 227.937 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(day\054 weekday\054 month\054 quarter\054 year) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 372.5039 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 412.189 39.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 13.5 Tm
+/F1 8.5 Tf
+11 TL
+(Year to Quarter to) Tj
+T*
+(Month to Date) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Dim\137TimeOfDay) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 77.70079 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(hour) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 159.9055 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(time\137key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 227.937 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(hour\054 peak \057 off\055peak\054 day part) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 372.5039 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 412.189 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Dim\137Weather) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 77.70079 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(weather\137band) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 159.9055 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(weather\137key) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 227.937 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(rain level \050none\054 light\054 heavy\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 372.5039 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 412.189 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(None) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 148 m
+493.2283 148 l
+S
+n
+0 0 m
+493.2283 0 l
+S
+n
+0 0 m
+0 148 l
+S
+n
+493.2283 0 m
+493.2283 148 l
+S
+n
+0 130 m
+493.2283 130 l
+S
+n
+0 112 m
+493.2283 112 l
+S
+n
+0 94 m
+493.2283 94 l
+S
+n
+0 65 m
+493.2283 65 l
+S
+n
+0 36 m
+493.2283 36 l
+S
+n
+0 18 m
+493.2283 18 l
+S
+n
+73.70079 0 m
+73.70079 148 l
+S
+n
+155.9055 0 m
+155.9055 148 l
+S
+n
+223.937 0 m
+223.937 148 l
+S
+n
+368.5039 0 m
+368.5039 148 l
+S
+n
+408.189 0 m
+408.189 148 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 361.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(3\056 Which Dimensions Connect to Which Fact) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 51.02362 274.3701 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 83 493.2283 -18 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 36 493.2283 -18 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 4 68.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Fact Table) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 68.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Zone) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 239.2756 68.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Station) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 287.4646 68.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Company) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 341.3228 68.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Date) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 381.0079 68.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(TimeOfDay) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 449.0394 68.5 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 8.5 Tf
+11 TL
+(Weather) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 39.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 13.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes \050pickup and) Tj
+T*
+(drop\055off\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 239.2756 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(\055) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 287.4646 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 341.3228 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 381.0079 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 449.0394 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 239.2756 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(\055) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 287.4646 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(\055) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 341.3228 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 381.0079 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 449.0394 21.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 4 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Fact\137Charger\137Coverage) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 137.2283 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 239.2756 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 287.4646 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(\055) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 341.3228 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(Yes) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 381.0079 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(\055) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 449.0394 3.5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F1 8.5 Tf
+11 TL
+(\055) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 83 m
+493.2283 83 l
+S
+n
+0 0 m
+493.2283 0 l
+S
+n
+0 0 m
+0 83 l
+S
+n
+493.2283 0 m
+493.2283 83 l
+S
+n
+0 65 m
+493.2283 65 l
+S
+n
+0 36 m
+493.2283 36 l
+S
+n
+0 18 m
+493.2283 18 l
+S
+n
+133.2283 0 m
+133.2283 83 l
+S
+n
+235.2756 0 m
+235.2756 83 l
+S
+n
+283.4646 0 m
+283.4646 83 l
+S
+n
+337.3228 0 m
+337.3228 83 l
+S
+n
+377.0079 0 m
+377.0079 83 l
+S
+n
+445.0394 0 m
+445.0394 83 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 269.3701 cm
+Q
+q
+1 0 0 1 57.02362 230.3701 cm
+q
+BT
+1 0 0 1 0 29.5 Tm
+-0.044009 Tw
+13 TL
+/F2 9.5 Tf
+0.133333 0.133333 0.133333 rg
+(Notes\072) Tj
+/F1 9.5 Tf
+( Dim\137Zone is used twice in Fact\137Trips \050pickup zone and drop\055off zone\051\054 so it plays two roles\056 Dim\137Station is) Tj
+T*
+0 Tw
+(Type 2 so the warehouse keeps history when a station changes its network\054 ports or status\056 All measures follow) Tj
+T*
+(the grain statements in the Grain Definition Document\056) Tj
+T*
+ET
+Q
+Q
+
+Q
+q
+0.0 0.0 595.276 841.89 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+112.7165 716.1106 317.1515 10.5 re
+f*
+0.133 0.133 0.133 rg
+BT
+/F1-0 7.353272 Tf
+8.823926 TL
+ET
+BT
+1 0 0 1 113.7165 718.8106 Tm
+(Ayza Ahmed \055 24L\0552577\054 Eman Adil \055 24L\0552589\054 Dua Sarfaraz \055 24L\0552587\054 Gul\055e\055Zara \055 24L\0552592\054 Rumesha Naveed \055 24L\0552603) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000417 00000 n 
+0000000476 00000 n 
+0000000525 00000 n 
+0000000768 00000 n 
+0000016279 00000 n 
+0000016386 00000 n 
+0000016493 00000 n 
+trailer
+<<
+/Size 9
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+16605
+%%EOF

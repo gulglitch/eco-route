@@ -1,0 +1,1248 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (Project Team)
+/CreationDate (D\07220261025160638\05300\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220261025160638\05300\04700\047)
+/Subject (\050unspecified\051)
+/Title (10 Business Questions \055 NYC Ride\055Hailing\054 Weather \046 EV Charging Access)
+/Trapped (\057False)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 10846
+>>
+stream
+q
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+BT
+/F1 8 Tf
+9.6 TL
+ET
+0.333333 0.333333 0.333333 rg
+BT
+1 0 0 1 56.69291 28.34646 Tm
+(DL3004 \174 Final Project \174 Phase 1 \174 10 Business Questions) Tj
+T*
+ET
+BT
+1 0 0 1 513.2307 28.34646 Tm
+(Page 1) Tj
+T*
+ET
+Q
+q
+1 0 0 1 62.69291 760.8661 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 4 Tm
+/F2 20 Tf
+24 TL
+(10 Business Questions) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 62.69291 757.8661 cm
+Q
+q
+1 0 0 1 62.69291 740.8661 cm
+q
+BT
+1 0 0 1 0 4 Tm
+17 TL
+/F1 13 Tf
+0.333333 0.333333 0.333333 rg
+(NYC Ride\055Hailing\054 Weather \046 EV Charging Access) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 62.69291 732.8661 cm
+Q
+q
+1 0 0 1 56.69291 692.8661 cm
+q
+0.933333 0.952941 0.976471 rg
+n
+0 40 62.3622 -40 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 6 24 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Course) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 68.3622 24 cm
+q
+BT
+1 0 0 1 0 3 Tm
+12 TL
+/F1 9 Tf
+0.133333 0.133333 0.133333 rg
+(DL3004 Data Warehousing \046 BI Lab\054 Fall 2026\054 FAST\055NU Lahore) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 6 4 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Team) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 68.3622 4 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+() Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 40 m
+481.8898 40 l
+S
+n
+0 0 m
+481.8898 0 l
+S
+n
+0 0 m
+0 40 l
+S
+n
+481.8898 0 m
+481.8898 40 l
+S
+n
+0 20 m
+481.8898 20 l
+S
+n
+62.3622 0 m
+62.3622 40 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 684.8661 cm
+Q
+q
+1 0 0 1 62.69291 670.8661 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 4 Tm
+/F1 10 Tf
+14 TL
+(These questions guide the warehouse design\056 Each one can be answered from our fact tables\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 62.69291 664.8661 cm
+Q
+q
+1 0 0 1 62.69291 641.8661 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(A\056 Ride\055Hailing Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 56.69291 503.8661 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 134 481.8898 -22 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 90 481.8898 -22 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 34 481.8898 -34 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 5 117 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(\043) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 117 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Business Question) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 117 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Fact Table) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 117 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Main Dimensions) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 95 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(1) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 95 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Which pickup zones have the most trips each month\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 95 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 95 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Zone\054 Date) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 73 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(2) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 73 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Which zones have the highest driver pay per mile\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 73 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 73 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Zone) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(3) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 39 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 15 Tm
+/F1 9 Tf
+12 TL
+(How do trips\054 fares and tips compare between Uber and) Tj
+T*
+(Lyft\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 45 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Company\054 Date) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 11 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(4) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 15 Tm
+/F1 9 Tf
+12 TL
+(Which hours of the day have the longest customer) Tj
+T*
+(waiting times\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 11 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Trips) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 11 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(TimeOfDay) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 134 m
+481.8898 134 l
+S
+n
+0 0 m
+481.8898 0 l
+S
+n
+0 0 m
+0 134 l
+S
+n
+481.8898 0 m
+481.8898 134 l
+S
+n
+0 112 m
+481.8898 112 l
+S
+n
+0 90 m
+481.8898 90 l
+S
+n
+0 68 m
+481.8898 68 l
+S
+n
+0 34 m
+481.8898 34 l
+S
+n
+22.67717 0 m
+22.67717 134 l
+S
+n
+260.7874 0 m
+260.7874 134 l
+S
+n
+391.1811 0 m
+391.1811 134 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 480.8661 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(B\056 Weather and Zone Demand) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 56.69291 364.8661 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 112 481.8898 -22 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 56 481.8898 -34 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 5 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(\043) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Business Question) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Fact Table) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Main Dimensions) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 67 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(5) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 61 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 15 Tm
+/F1 9 Tf
+12 TL
+(How much does rain change the number of trips per) Tj
+T*
+(hour\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 67 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 61 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 15 Tm
+/F1 9 Tf
+12 TL
+(Weather\054) Tj
+T*
+(TimeOfDay) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 33 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(6) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 27 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 15 Tm
+/F1 9 Tf
+12 TL
+(Does heavy rain increase customer waiting time in each) Tj
+T*
+(borough\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 33 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 33 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Weather\054 Zone) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(7) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Does driver pay per mile go up when it rains\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Weather\054 Date) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 112 m
+481.8898 112 l
+S
+n
+0 0 m
+481.8898 0 l
+S
+n
+0 0 m
+0 112 l
+S
+n
+481.8898 0 m
+481.8898 112 l
+S
+n
+0 90 m
+481.8898 90 l
+S
+n
+0 56 m
+481.8898 56 l
+S
+n
+0 22 m
+481.8898 22 l
+S
+n
+22.67717 0 m
+22.67717 112 l
+S
+n
+260.7874 0 m
+260.7874 112 l
+S
+n
+391.1811 0 m
+391.1811 112 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 341.8661 cm
+q
+0.121569 0.227451 0.372549 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F2 11.5 Tf
+15 TL
+(C\056 EV Charging Access) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 56.69291 225.8661 cm
+q
+0.121569 0.227451 0.372549 rg
+n
+0 112 481.8898 -22 re
+f*
+0.933333 0.952941 0.976471 rg
+n
+0 56 481.8898 -22 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 5 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(\043) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Business Question) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Fact Table) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 95 cm
+q
+1 1 1 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 9 Tf
+12 TL
+(Main Dimensions) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 67 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(8) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 61 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 15 Tm
+/F1 9 Tf
+12 TL
+(How many charging stations are in each borough\054 and) Tj
+T*
+(how has this grown by year\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 67 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Charger\137Coverage) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 67 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Zone\054 Date\054 Station) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 39 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(9) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 39 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Which taxi zones have no charging station at all\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 39 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Charger\137Coverage) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 39 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Zone) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 5 11 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(10) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 27.67717 11 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Which busy zones \050most trips\051 have few or no chargers\077) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 265.7874 5 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 15 Tm
+/F1 9 Tf
+12 TL
+(Fact\137Zone\137Hourly\137Snapshot) Tj
+T*
+(\053 Fact\137Charger\137Coverage) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 396.1811 11 cm
+q
+0.133333 0.133333 0.133333 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 9 Tf
+12 TL
+(Zone) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0.772549 0.811765 0.858824 RG
+0.4 w
+n
+0 112 m
+481.8898 112 l
+S
+n
+0 0 m
+481.8898 0 l
+S
+n
+0 0 m
+0 112 l
+S
+n
+481.8898 0 m
+481.8898 112 l
+S
+n
+0 90 m
+481.8898 90 l
+S
+n
+0 56 m
+481.8898 56 l
+S
+n
+0 34 m
+481.8898 34 l
+S
+n
+22.67717 0 m
+22.67717 112 l
+S
+n
+260.7874 0 m
+260.7874 112 l
+S
+n
+391.1811 0 m
+391.1811 112 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 215.8661 cm
+Q
+q
+1 0 0 1 62.69291 187.8661 cm
+q
+BT
+1 0 0 1 0 18 Tm
+14 TL
+/F2 10 Tf
+0.133333 0.133333 0.133333 rg
+(Note\072) Tj
+/F1 10 Tf
+( Question 9 is answered by finding zones in Dim\137Zone that have no matching row in) Tj
+T*
+(Fact\137Charger\137Coverage\056 This is the benefit of a factless fact table\056) Tj
+T*
+ET
+Q
+Q
+
+Q
+q
+0.0 0.0 595.276 841.89 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+124.0551 697.0031 335.631 11 re
+f*
+0.133 0.133 0.133 rg
+BT
+/F1-0 7.153466 Tf
+8.584159 TL
+ET
+BT
+1 0 0 1 125.0551 699.8031 Tm
+(Ayza Ahmed \055 24L\0552577\054 Eman Adil \055 24L\0552589\054 Dua Sarfaraz \055 24L\0552587\054 Gul\055e\055Zara \055 24L\0552592\054 Rumesha Naveed \055 24L\0552603) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000404 00000 n 
+0000000463 00000 n 
+0000000512 00000 n 
+0000000755 00000 n 
+0000011654 00000 n 
+0000011761 00000 n 
+0000011868 00000 n 
+trailer
+<<
+/Size 9
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+11980
+%%EOF
