@@ -1,0 +1,25 @@
+# Python cache only
+__pycache__/
+*.py[cod]
+*$py.class
+.ienv
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Large data files only (structure kept, big files ignored)
+data/raw/fhvhv_tripdata_2024-01.parquet
+data/raw/nyc_fhv_trips_jan2024.csv
+data/raw/Electric_Vehicle_Charging_Stations_in_New_York.csv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
