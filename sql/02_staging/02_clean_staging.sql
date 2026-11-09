@@ -195,3 +195,10 @@ FROM project_staging.stg_zones AS raw
 JOIN project_staging.stg_zones_clean AS clean
     ON clean.locationid = raw.locationid
 WHERE raw.locationid = 264;
+
+
+
+-- Count trips that would produce a negative customer wait time.
+SELECT COUNT(*) AS negative_wait_trips
+FROM project_staging.stg_trips_clean
+WHERE pickup_datetime < request_datetime;
