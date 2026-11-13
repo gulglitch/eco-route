@@ -55,7 +55,7 @@ SELECT
         shared_request_flag, shared_match_flag, access_a_ride_flag,
         wav_request_flag, wav_match_flag
     )) AS distinct_trip_rows
-FROM project_staging.stg_trips
+FROM project_staging.stg_trips;
 
 ---------------------------------------------------------------------------------------------
 
