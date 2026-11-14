@@ -4,10 +4,10 @@
 # Usage: just run this file in PowerShell
 # ============================================================
 
-$PSQL    = "C:\Program Files\PostgreSQL\17\bin\psql.exe"
+$PSQL    = "C:\Program Files\PostgreSQL\18\bin\psql.exe"
 $DB      = "nyc_ev_mobility_dw"
 $USER    = "postgres"
-$PASS    = "1250"
+$PASS    = "12345678"
 $BASE    = $PSScriptRoot   # folder where this script lives
 
 # Set password so psql never prompts

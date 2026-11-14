@@ -29,7 +29,7 @@ DB_CONFIG = {
     'port': 5432,
     'database': 'nyc_ev_mobility_dw',
     'user': 'postgres',
-    'password': '1250'
+    'password': '12345678'
 }
 
 # Path to raw data folder (relative to this script's location)
