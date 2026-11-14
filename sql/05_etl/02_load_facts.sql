@@ -1,70 +1,103 @@
 -- ============================================================================
 -- Script: 02_load_facts.sql
--- Purpose: Populate all 3 fact tables by joining staging data to dimension keys
+-- Purpose: Populate all 3 fact tables using BUSINESS KEY -> SURROGATE KEY mapping
 -- Schema: project_dw
--- Phase: 2 - ETL Fact Loading
+-- Phase: 2 - Task 5: Fact Loading
 --
--- Run AFTER:
+-- Run AFTER (in this order):
+--   03_dimensions/01_create_dimensions.sql
 --   05_etl/01_load_dimensions.sql
+--   04_facts/01_create_facts.sql
+--   python/assign_stations_to_zones.py      (creates project_staging.stg_station_zone_map)
+--
+-- Business key -> surrogate key mapping used here:
+--   trips.PULocationID / DOLocationID  -> dim_zone.location_id       -> zone_key
+--   trips.hvfhs_license_num            -> dim_company.hvfhs_license_num -> company_key
+--   trips.pickup_datetime::DATE        -> dim_date.full_date          -> date_key
+--   hour(trips.pickup_datetime)        -> dim_timeofday.hour_of_day   -> time_key
+--   date_trunc('hour', pickup)         -> hourly weather band         -> weather_key
+--   station -> zone (spatial join)     -> dim_station / dim_zone      -> station_key, zone_key
 -- ============================================================================
 
 SET search_path TO project_dw;
 
 -- ============================================================================
--- 1. LOAD FACT_TRIPS
--- Join each cleaned trip row to its dimension surrogate keys
+-- 0. WORK TABLES (temporary, live only for this session)
 -- ============================================================================
 
-TRUNCATE TABLE fact_trips RESTART IDENTITY CASCADE;
+-- 0A. Hourly weather -> weather_key (same banding rules as dim_weather load)
+DROP TABLE IF EXISTS tmp_hourly_weather;
+
+CREATE TEMP TABLE tmp_hourly_weather AS
+SELECT
+    sw.datetime,
+    sw.precipitation_mm,
+    dw.weather_key
+FROM project_staging.stg_weather_clean sw
+INNER JOIN dim_weather dw
+    ON dw.weather_band = (
+        CASE
+            WHEN sw.precipitation_mm IS NULL OR sw.precipitation_mm = 0 THEN 'No Rain'
+            WHEN sw.precipitation_mm < 2.5                              THEN 'Light Rain'
+            WHEN sw.precipitation_mm < 10                               THEN 'Moderate Rain'
+            ELSE                                                             'Heavy Rain'
+        END
+        || ' / ' ||
+        CASE
+            WHEN sw.temperature_c IS NULL OR sw.temperature_c < 0 THEN 'Freezing'
+            WHEN sw.temperature_c < 10                            THEN 'Cold'
+            WHEN sw.temperature_c < 20                            THEN 'Mild'
+            ELSE                                                       'Warm'
+        END
+        || ' / ' ||
+        CASE
+            WHEN sw.humidity_percent IS NULL OR sw.humidity_percent < 40 THEN 'Low'
+            WHEN sw.humidity_percent < 70                                THEN 'Moderate'
+            ELSE                                                              'High'
+        END
+    );
+
+CREATE UNIQUE INDEX ux_tmp_hourly_weather ON tmp_hourly_weather(datetime);
+
+-- Expect 744 (31 days x 24 hours)
+SELECT COUNT(*) AS hourly_weather_rows FROM tmp_hourly_weather;
+
+-- 0B. Materialise the clean trips once (the view does a DISTINCT over 500k rows)
+DROP TABLE IF EXISTS tmp_trips_clean;
+
+CREATE TEMP TABLE tmp_trips_clean AS
+SELECT * FROM project_staging.stg_trips_clean;
+
+ANALYZE tmp_trips_clean;
+
+-- ============================================================================
+-- 1. FACT_TRIPS
+-- Grain: one row per ride-hailing trip
+-- ============================================================================
+
+TRUNCATE TABLE fact_trips RESTART IDENTITY;
 
 INSERT INTO fact_trips (
-    pickup_zone_key,
-    dropoff_zone_key,
-    company_key,
-    date_key,
-    time_key,
-    weather_key,
+    pickup_zone_key, dropoff_zone_key, company_key, date_key, time_key, weather_key,
     dispatching_base_num,
-    trip_miles,
-    trip_time_sec,
-    base_fare,
-    tolls,
-    sales_tax,
-    congestion_surcharge,
-    airport_fee,
-    tips,
-    driver_pay,
-    wait_min,
-    shared_request_flag,
-    wav_request_flag,
+    trip_miles, trip_time_sec, base_fare, tolls, sales_tax,
+    congestion_surcharge, airport_fee, tips, driver_pay, wait_min,
+    shared_request_flag, wav_request_flag,
     batch_id
 )
 SELECT
-    -- Pickup zone surrogate key
-    pz.zone_key                                                 AS pickup_zone_key,
+    pz.zone_key,
+    dz.zone_key,
+    co.company_key,
+    dd.date_key,
+    dt.time_key,
+    hw.weather_key,
 
-    -- Dropoff zone surrogate key
-    dz.zone_key                                                 AS dropoff_zone_key,
-
-    -- Company surrogate key
-    co.company_key                                              AS company_key,
-
-    -- Date surrogate key (from pickup datetime)
-    dd.date_key                                                 AS date_key,
-
-    -- Time surrogate key (hour of pickup)
-    dt.time_key                                                 AS time_key,
-
-    -- Weather surrogate key — match the weather band to the pickup hour
-    dw.weather_key                                              AS weather_key,
-
-    -- Degenerate dimension
     t.dispatching_base_num,
 
-    -- Measures
     t.trip_miles,
-    t.trip_time                                                 AS trip_time_sec,
-    t.base_passenger_fare                                       AS base_fare,
+    t.trip_time,                       -- seconds
+    t.base_passenger_fare,
     t.tolls,
     t.sales_tax,
     t.congestion_surcharge,
@@ -72,192 +105,186 @@ SELECT
     t.tips,
     t.driver_pay,
 
-    -- Wait time: minutes from request to actual pickup
+    -- Customer wait (minutes). Negative waits (pickup before request) are
+    -- invalid, so they are stored as NULL instead of polluting averages.
     CASE
-        WHEN t.request_datetime IS NOT NULL AND t.pickup_datetime IS NOT NULL
-        THEN ROUND(
-            EXTRACT(EPOCH FROM (t.pickup_datetime - t.request_datetime)) / 60.0,
-            2
-        )
+        WHEN t.request_datetime IS NOT NULL
+         AND t.pickup_datetime  >= t.request_datetime
+        THEN ROUND((EXTRACT(EPOCH FROM (t.pickup_datetime - t.request_datetime)) / 60.0)::NUMERIC, 2)
         ELSE NULL
-    END                                                         AS wait_min,
+    END,
 
     t.shared_request_flag,
     t.wav_request_flag,
 
-    'ETL_FACTS_' || TO_CHAR(CURRENT_TIMESTAMP, 'YYYYMMDD_HH24MI')  AS batch_id
-
-FROM project_staging.stg_trips_clean t
-
--- Zone lookups
-INNER JOIN dim_zone pz  ON pz.location_id = t.pulocationid
-INNER JOIN dim_zone dz  ON dz.location_id = t.dolocationid
-
--- Company lookup
-INNER JOIN dim_company co ON co.hvfhs_license_num = t.hvfhs_license_num
-
--- Date lookup (from pickup date)
-INNER JOIN dim_date dd   ON dd.full_date = t.pickup_datetime::DATE
-
--- Time lookup (from pickup hour)
-INNER JOIN dim_timeofday dt ON dt.hour_of_day = EXTRACT(HOUR FROM t.pickup_datetime)::SMALLINT
-
--- Weather lookup — find the weather record for the same hour as pickup
-INNER JOIN (
-    -- Map each raw hourly weather row to its dim_weather surrogate key
-    SELECT
-        sw.datetime,
-        dw2.weather_key
-    FROM project_staging.stg_weather_clean sw
-    INNER JOIN dim_weather dw2 ON dw2.weather_band = (
-        CASE
-            WHEN sw.precipitation_mm IS NULL OR sw.precipitation_mm = 0   THEN 'No Rain'
-            WHEN sw.precipitation_mm < 2.5                                 THEN 'Light Rain'
-            WHEN sw.precipitation_mm < 10                                  THEN 'Moderate Rain'
-            ELSE                                                                 'Heavy Rain'
-        END
-        || ' / ' ||
-        CASE
-            WHEN sw.temperature_c IS NULL OR sw.temperature_c < 0  THEN 'Freezing'
-            WHEN sw.temperature_c < 10                              THEN 'Cold'
-            WHEN sw.temperature_c < 20                              THEN 'Mild'
-            ELSE                                                          'Warm'
-        END
-        || ' / ' ||
-        CASE
-            WHEN sw.humidity_percent IS NULL OR sw.humidity_percent < 40  THEN 'Low'
-            WHEN sw.humidity_percent < 70                                   THEN 'Moderate'
-            ELSE                                                                 'High'
-        END
-    )
-) weather_map
-    ON weather_map.datetime = DATE_TRUNC('hour', t.pickup_datetime)
-
--- Only join to current station records for SCD Type 2
-LEFT JOIN dim_station ds ON ds.station_id IS NOT NULL AND ds.is_current = TRUE
-
--- Drop trips where mandatory dimension keys couldn't be resolved
-WHERE t.pickup_datetime IS NOT NULL
-  AND t.pulocationid    IS NOT NULL
-  AND t.dolocationid    IS NOT NULL
+    'ETL_FACTS_' || TO_CHAR(CURRENT_TIMESTAMP, 'YYYYMMDD_HH24MI')
+FROM tmp_trips_clean t
+INNER JOIN dim_zone      pz ON pz.location_id       = t.pulocationid
+INNER JOIN dim_zone      dz ON dz.location_id       = t.dolocationid
+INNER JOIN dim_company   co ON co.hvfhs_license_num = t.hvfhs_license_num
+INNER JOIN dim_date      dd ON dd.full_date         = t.pickup_datetime::DATE
+INNER JOIN dim_timeofday dt ON dt.hour_of_day       = EXTRACT(HOUR FROM t.pickup_datetime)::SMALLINT
+INNER JOIN tmp_hourly_weather hw
+        ON hw.datetime = DATE_TRUNC('hour', t.pickup_datetime)
+WHERE t.pickup_datetime   IS NOT NULL
+  AND t.pulocationid      IS NOT NULL
+  AND t.dolocationid      IS NOT NULL
   AND t.hvfhs_license_num IS NOT NULL;
+
+ANALYZE fact_trips;
 
 SELECT 'fact_trips' AS table_name, COUNT(*) AS rows_loaded FROM fact_trips;
 
+-- Where did rows go? (clean staging rows that did not reach the fact table)
+SELECT
+    COUNT(*)                                                                    AS clean_trip_rows,
+    (SELECT COUNT(*) FROM fact_trips)                                           AS fact_trip_rows,
+    COUNT(*) - (SELECT COUNT(*) FROM fact_trips)                                AS rows_not_loaded,
+    COUNT(*) FILTER (WHERE pickup_datetime IS NULL OR pulocationid IS NULL
+                        OR dolocationid IS NULL OR hvfhs_license_num IS NULL)   AS missing_mandatory_key,
+    COUNT(*) FILTER (WHERE pickup_datetime < '2024-01-01'
+                        OR pickup_datetime >= '2024-02-01')                     AS pickup_outside_jan_2024,
+    COUNT(*) FILTER (WHERE hvfhs_license_num IS NOT NULL
+                       AND hvfhs_license_num NOT IN
+                           (SELECT hvfhs_license_num FROM dim_company))         AS unknown_company,
+    COUNT(*) FILTER (WHERE request_datetime IS NOT NULL
+                       AND pickup_datetime < request_datetime)                  AS negative_wait_set_to_null
+FROM tmp_trips_clean;
+
 -- ============================================================================
--- 2. LOAD FACT_ZONE_HOURLY_SNAPSHOT
--- Aggregate trip counts and financial measures per zone per hour
+-- 2. FACT_ZONE_HOURLY_SNAPSHOT
+-- Grain: one row per zone per hour  (265 zones x 744 hours = 197,160 rows)
+-- Periodic snapshot: every zone-hour gets a row, including hours with ZERO
+-- trips (trip_count = 0), so demand/weather analysis is not biased.
 -- ============================================================================
 
-TRUNCATE TABLE fact_zone_hourly_snapshot CASCADE;
+TRUNCATE TABLE fact_zone_hourly_snapshot;
 
 INSERT INTO fact_zone_hourly_snapshot (
-    zone_key,
-    date_key,
-    time_key,
-    weather_key,
-    trip_count,
-    total_wait_min,
-    avg_wait_min,
-    total_driver_pay,
-    avg_trip_miles,
-    rainfall_mm,
+    zone_key, date_key, time_key, weather_key,
+    trip_count, total_wait_min, avg_wait_min,
+    total_driver_pay, avg_trip_miles, rainfall_mm,
     batch_id
 )
 SELECT
-    ft.pickup_zone_key                          AS zone_key,
-    ft.date_key,
-    ft.time_key,
-    ft.weather_key,
+    z.zone_key,
+    dd.date_key,
+    dt.time_key,
+    hw.weather_key,
 
-    COUNT(*)                                    AS trip_count,
-    SUM(ft.wait_min)                            AS total_wait_min,
-    ROUND(AVG(ft.wait_min), 2)                  AS avg_wait_min,
-    ROUND(SUM(ft.driver_pay), 2)                AS total_driver_pay,
-    ROUND(AVG(ft.trip_miles), 2)                AS avg_trip_miles,
+    COALESCE(a.trip_count, 0),
+    COALESCE(a.total_wait_min, 0),
+    a.avg_wait_min,                         -- NULL when no trips / no valid waits
+    COALESCE(a.total_driver_pay, 0),
+    a.avg_trip_miles,
+    hw.precipitation_mm,
 
-    -- Pull rainfall from the weather dimension via weather_key
-    MAX(sw.precipitation_mm)                    AS rainfall_mm,
+    'ETL_SNAPSHOT_' || TO_CHAR(CURRENT_TIMESTAMP, 'YYYYMMDD_HH24MI')
+FROM dim_zone z
+CROSS JOIN tmp_hourly_weather hw
+INNER JOIN dim_date      dd ON dd.full_date   = hw.datetime::DATE
+INNER JOIN dim_timeofday dt ON dt.hour_of_day = EXTRACT(HOUR FROM hw.datetime)::SMALLINT
+LEFT JOIN (
+    SELECT
+        pickup_zone_key,
+        date_key,
+        time_key,
+        COUNT(*)                    AS trip_count,
+        SUM(wait_min)               AS total_wait_min,
+        ROUND(AVG(wait_min), 2)     AS avg_wait_min,
+        SUM(driver_pay)             AS total_driver_pay,
+        ROUND(AVG(trip_miles), 2)   AS avg_trip_miles
+    FROM fact_trips
+    GROUP BY pickup_zone_key, date_key, time_key
+) a
+    ON  a.pickup_zone_key = z.zone_key
+    AND a.date_key        = dd.date_key
+    AND a.time_key        = dt.time_key;
 
-    'ETL_SNAPSHOT_' || TO_CHAR(CURRENT_TIMESTAMP, 'YYYYMMDD_HH24MI') AS batch_id
-
-FROM fact_trips ft
-
--- Re-join to weather staging to get the actual rainfall value
-INNER JOIN dim_timeofday dt  ON dt.time_key = ft.time_key
-INNER JOIN dim_date      dd  ON dd.date_key = ft.date_key
-LEFT JOIN project_staging.stg_weather_clean sw
-    ON sw.datetime = (dd.full_date + (dt.hour_of_day || ' hours')::INTERVAL)
-
-GROUP BY
-    ft.pickup_zone_key,
-    ft.date_key,
-    ft.time_key,
-    ft.weather_key;
+ANALYZE fact_zone_hourly_snapshot;
 
 SELECT 'fact_zone_hourly_snapshot' AS table_name, COUNT(*) AS rows_loaded
 FROM fact_zone_hourly_snapshot;
 
 -- ============================================================================
--- 3. LOAD FACT_CHARGER_COVERAGE
--- One row per EV station per zone per date (Jan 2024)
--- Uses the spatial proximity: stations are matched to their closest taxi zone
--- (For a simple approach we match on zone name or use known city → borough mapping)
+-- 3. FACT_CHARGER_COVERAGE
+-- Grain: one row per EV station per taxi zone per date (Jan 2024)
+-- Each station is assigned to the taxi zone that contains it (spatial join done
+-- in python/assign_stations_to_zones.py). Stations outside NYC are not mapped.
 -- ============================================================================
 
-TRUNCATE TABLE fact_charger_coverage CASCADE;
+TRUNCATE TABLE fact_charger_coverage;
 
 INSERT INTO fact_charger_coverage (
-    station_key,
-    zone_key,
-    date_key,
-    num_ports,
-    is_operational,
+    station_key, zone_key, date_key,
+    num_ports, is_operational, distance_to_zone_center_km,
     batch_id
 )
 SELECT
     ds.station_key,
     dz.zone_key,
-
-    -- One record per date in January 2024
     dd.date_key,
-
     ds.num_ports,
-    ds.status = 'E'                                 AS is_operational,
+    COALESCE(ds.status = 'E', FALSE),           -- 'E' = open/available
+    m.distance_to_zone_center_km,
+    'ETL_COVERAGE_' || TO_CHAR(CURRENT_TIMESTAMP, 'YYYYMMDD_HH24MI')
+FROM project_staging.stg_station_zone_map m
+INNER JOIN dim_station ds ON ds.station_key = m.station_key
+                         AND ds.is_current  = TRUE
+INNER JOIN dim_zone    dz ON dz.location_id = m.location_id
+CROSS JOIN dim_date    dd;
 
-    'ETL_COVERAGE_' || TO_CHAR(CURRENT_TIMESTAMP, 'YYYYMMDD_HH24MI') AS batch_id
-
-FROM dim_station ds
-
--- Match station to zone by borough (simple city-to-borough approach)
-INNER JOIN dim_zone dz ON UPPER(TRIM(dz.borough)) = UPPER(TRIM(
-    CASE ds.city
-        WHEN 'New York'   THEN 'Manhattan'
-        WHEN 'Brooklyn'   THEN 'Brooklyn'
-        WHEN 'Bronx'      THEN 'Bronx'
-        WHEN 'Queens'     THEN 'Queens'
-        WHEN 'Staten Island' THEN 'Staten Island'
-        ELSE ds.city
-    END
-))
-
--- Only include stations in NYC (5 boroughs)
--- Cross with all January 2024 dates
-CROSS JOIN dim_date dd
-
-WHERE ds.is_current = TRUE
-  AND ds.city IN ('New York', 'Brooklyn', 'Bronx', 'Queens', 'Staten Island',
-                  'Manhattan', 'New York City')
-  AND dd.year = 2024
-  AND dd.month_num = 1;
+ANALYZE fact_charger_coverage;
 
 SELECT 'fact_charger_coverage' AS table_name, COUNT(*) AS rows_loaded
 FROM fact_charger_coverage;
 
 -- ============================================================================
--- FINAL VERIFICATION — all fact row counts
+-- 4. LOAD VERIFICATION (quick sanity checks; full DQ report is Task 6)
 -- ============================================================================
-SELECT 'fact_trips'                AS fact,  COUNT(*) AS rows FROM fact_trips               UNION ALL
-SELECT 'fact_zone_hourly_snapshot',           COUNT(*)        FROM fact_zone_hourly_snapshot UNION ALL
-SELECT 'fact_charger_coverage',               COUNT(*)        FROM fact_charger_coverage
+
+-- 4A. Row counts
+SELECT 'fact_trips'                AS fact, COUNT(*) AS row_count FROM fact_trips                UNION ALL
+SELECT 'fact_zone_hourly_snapshot',          COUNT(*)              FROM fact_zone_hourly_snapshot UNION ALL
+SELECT 'fact_charger_coverage',              COUNT(*)              FROM fact_charger_coverage
 ORDER BY fact;
+
+-- 4B. Facts without a matching dimension row (all must be 0)
+SELECT 'fact_trips.pickup_zone_key'  AS check_name, COUNT(*) AS orphan_rows
+FROM fact_trips f LEFT JOIN dim_zone d ON d.zone_key = f.pickup_zone_key       WHERE d.zone_key IS NULL
+UNION ALL SELECT 'fact_trips.dropoff_zone_key', COUNT(*)
+FROM fact_trips f LEFT JOIN dim_zone d ON d.zone_key = f.dropoff_zone_key      WHERE d.zone_key IS NULL
+UNION ALL SELECT 'fact_trips.company_key', COUNT(*)
+FROM fact_trips f LEFT JOIN dim_company d ON d.company_key = f.company_key     WHERE d.company_key IS NULL
+UNION ALL SELECT 'fact_trips.date_key', COUNT(*)
+FROM fact_trips f LEFT JOIN dim_date d ON d.date_key = f.date_key              WHERE d.date_key IS NULL
+UNION ALL SELECT 'fact_trips.time_key', COUNT(*)
+FROM fact_trips f LEFT JOIN dim_timeofday d ON d.time_key = f.time_key         WHERE d.time_key IS NULL
+UNION ALL SELECT 'fact_trips.weather_key', COUNT(*)
+FROM fact_trips f LEFT JOIN dim_weather d ON d.weather_key = f.weather_key     WHERE d.weather_key IS NULL
+UNION ALL SELECT 'fact_zone_hourly_snapshot.zone_key', COUNT(*)
+FROM fact_zone_hourly_snapshot f LEFT JOIN dim_zone d ON d.zone_key = f.zone_key WHERE d.zone_key IS NULL
+UNION ALL SELECT 'fact_zone_hourly_snapshot.weather_key', COUNT(*)
+FROM fact_zone_hourly_snapshot f LEFT JOIN dim_weather d ON d.weather_key = f.weather_key WHERE d.weather_key IS NULL
+UNION ALL SELECT 'fact_charger_coverage.station_key', COUNT(*)
+FROM fact_charger_coverage f LEFT JOIN dim_station d ON d.station_key = f.station_key WHERE d.station_key IS NULL
+UNION ALL SELECT 'fact_charger_coverage.zone_key', COUNT(*)
+FROM fact_charger_coverage f LEFT JOIN dim_zone d ON d.zone_key = f.zone_key   WHERE d.zone_key IS NULL;
+
+-- 4C. Cross-fact reconciliation: snapshot must add up to the transaction fact
+SELECT
+    'trip count: fact_trips vs snapshot'                AS check_name,
+    (SELECT COUNT(*) FROM fact_trips)                   AS expected,
+    (SELECT SUM(trip_count) FROM fact_zone_hourly_snapshot) AS actual
+UNION ALL
+SELECT
+    'driver pay: fact_trips vs snapshot',
+    (SELECT ROUND(SUM(driver_pay), 2) FROM fact_trips),
+    (SELECT ROUND(SUM(total_driver_pay), 2) FROM fact_zone_hourly_snapshot);
+
+-- 4D. Trips per company (surrogate key resolved back to the business name)
+SELECT co.company_name, COUNT(*) AS trips
+FROM fact_trips f
+JOIN dim_company co ON co.company_key = f.company_key
+GROUP BY co.company_name
+ORDER BY trips DESC;
